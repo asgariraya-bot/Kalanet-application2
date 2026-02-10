@@ -1,0 +1,9 @@
+D:/Qt/KalaNetNew/CMakeFiles/KalaNetQt.dir
+D:/Qt/KalaNetNew/CMakeFiles/edit_cache.dir
+D:/Qt/KalaNetNew/CMakeFiles/rebuild_cache.dir
+D:/Qt/KalaNetNew/CMakeFiles/list_install_components.dir
+D:/Qt/KalaNetNew/CMakeFiles/install.dir
+D:/Qt/KalaNetNew/CMakeFiles/install/local.dir
+D:/Qt/KalaNetNew/CMakeFiles/install/strip.dir
+D:/Qt/KalaNetNew/CMakeFiles/KalaNetQt_autogen_timestamp_deps.dir
+D:/Qt/KalaNetNew/CMakeFiles/KalaNetQt_autogen.dir
