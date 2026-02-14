@@ -96,17 +96,26 @@ void MainWindow::on_adsListWidget_itemDoubleClicked(QListWidgetItem *item)
 }
 void MainWindow::setupDashboard() {
 
-    auto allAds = myManager.getApprovedAds();
-    int totalCount = allAds.size();
     this->setLayoutDirection(Qt::LeftToRight);
 
-    ui->lblTotalAds->setText("Your Total Ads: " + QString::number(totalCount));
-    ui->lblTotalAds->setText("Total Ads: " + QString::number(totalCount));
-    ui->lblWelcome->setText("Welcome, Dear User");
-    ui->lblPendingAds->setText("Pending: 0"
-    ui->lblSoldItems->setText("Sold: 0");
+
+    auto allAds = myManager.getApprovedAds();
+    int totalCount = allAds.size();
+
+
+    int currentVisibleAds = ui->listWidget->count();
+
+
+    if (currentVisibleAds < totalCount && currentVisibleAds > 0) {
+        ui->lblTotalAds->setText("Found: " + QString::number(currentVisibleAds));
+    } else {
+        ui->lblTotalAds->setText("Total Ads: " + QString::number(totalCount));
+    }
+
 
     ui->lblWelcome->setText("Welcome back, User!");
+    ui->lblPendingAds->setText("Pending: 0");
+    ui->lblSoldItems->setText("Sold: 0");
 }
 
 void MainWindow::on_btnNewAd_clicked(){

@@ -13,6 +13,53 @@
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
+  <property name="styleSheet">
+   <string notr="true">QMainWindow {
+    background-color: #1e1e2e;
+}
+
+QLabel {
+    color: #cdd6f4;
+    font-size: 14px;
+    font-family: &quot;Segoe UI&quot;, sans-serif;
+}
+
+#lblWelcome, #lblTotalAds {
+    font-size: 18px;
+    font-weight: bold;
+    color: #89b4fa;
+}
+
+QPushButton {
+    background-color: #313244;
+    color: #ffffff;
+    border-radius: 8px;
+    border: 1px solid #45475a;
+    padding: 10px;
+    min-width: 100px;
+}
+
+QPushButton:hover {
+    background-color: #a6e3a1;
+    color: #11111b;
+}
+
+QLineEdit {
+    background-color: #181825;
+    color: white;
+    border: 2px solid #45475a;
+    border-radius: 6px;
+    padding: 5px;
+}
+
+QListWidget {
+    background-color: #181825;
+    border: 1px solid #45475a;
+    border-radius: 8px;
+    color: #fab387;
+    padding: 5px;
+}</string>
+  </property>
   <widget class="QWidget" name="centralwidget">
    <widget class="QDoubleSpinBox" name="doubleSpinBox">
     <property name="geometry">
@@ -48,7 +95,7 @@
      <rect>
       <x>280</x>
       <y>170</y>
-      <width>90</width>
+      <width>122</width>
       <height>29</height>
      </rect>
     </property>
@@ -61,7 +108,7 @@
      <rect>
       <x>70</x>
       <y>180</y>
-      <width>90</width>
+      <width>122</width>
       <height>29</height>
      </rect>
     </property>
@@ -147,7 +194,7 @@
      <rect>
       <x>440</x>
       <y>110</y>
-      <width>90</width>
+      <width>122</width>
       <height>29</height>
      </rect>
     </property>
@@ -160,7 +207,7 @@
      <rect>
       <x>440</x>
       <y>160</y>
-      <width>90</width>
+      <width>122</width>
       <height>29</height>
      </rect>
     </property>
@@ -173,9 +220,20 @@
      <rect>
       <x>440</x>
       <y>200</y>
-      <width>90</width>
+      <width>122</width>
       <height>29</height>
      </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background-color: #f38ba8;
+    color: white;
+    border-radius: 8px;
+}
+
+QPushButton:hover {
+    background-color: #e84118;
+}</string>
     </property>
     <property name="text">
      <string>Logout</string>
@@ -202,6 +260,19 @@
      </rect>
     </property>
     <layout class="QVBoxLayout" name="verticalLayout_3"/>
+   </widget>
+   <widget class="QLineEdit" name="txtSearch">
+    <property name="geometry">
+     <rect>
+      <x>90</x>
+      <y>10</y>
+      <width>113</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="placeholderText">
+     <string>Search ads...</string>
+    </property>
    </widget>
   </widget>
   <widget class="QMenuBar" name="menubar">
