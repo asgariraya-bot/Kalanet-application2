@@ -21,7 +21,10 @@ public:
 private slots:
     void on_pushButton_clicked();
     void updateAdsDisplay();
-    void on_adsListWidget_itemDoubleClicked(QListWidgetItem *item);
+    void on_adsListWidget_itemDoubleClicked(QWidgetItem *item);
+    void setupDashboard();
+    void on_btnNewAd_clicked();
+    void on_btnMyProfile_clicked();
 private:
     Ui::MainWindow *ui;
     QImage selectedImage;
