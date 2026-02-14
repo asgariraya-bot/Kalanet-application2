@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>MainWindow</class>
- <widget class="QMainWindow" name="MainWindow">
+ <class>submitAdButton</class>
+ <widget class="QMainWindow" name="submitAdButton">
   <property name="geometry">
    <rect>
     <x>0</x>
@@ -13,189 +13,82 @@
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
-  <property name="ss" stdset="0">
-   <string/>
-  </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QStackedWidget" name="stackedWidget">
+   <widget class="QDoubleSpinBox" name="doubleSpinBox">
+    <property name="geometry">
+     <rect>
+      <x>270</x>
+      <y>300</y>
+      <width>66</width>
+      <height>29</height>
+     </rect>
+    </property>
+    <property name="minimum">
+     <double>999999999.000000000000000</double>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>280</x>
+      <y>400</y>
+      <width>63</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>TextLabel</string>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton">
+    <property name="geometry">
+     <rect>
+      <x>280</x>
+      <y>170</y>
+      <width>90</width>
+      <height>29</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>PushButton</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_2">
     <property name="geometry">
      <rect>
       <x>70</x>
-      <y>22</y>
-      <width>147</width>
-      <height>262</height>
+      <y>180</y>
+      <width>90</width>
+      <height>29</height>
      </rect>
     </property>
-    <property name="currentIndex">
-     <number>4</number>
+    <property name="text">
+     <string>Submit</string>
     </property>
-    <widget class="QWidget" name="page">
-     <layout class="QVBoxLayout" name="verticalLayout">
-      <item>
-       <widget class="QPushButton" name="userModeButton">
-        <property name="text">
-         <string>ورود کاربر</string>
-        </property>
-       </widget>
-      </item>
-      <item>
-       <widget class="QPushButton" name="adminModeButton">
-        <property name="text">
-         <string>ورود مدیر</string>
-        </property>
-       </widget>
-      </item>
-     </layout>
-    </widget>
-    <widget class="QWidget" name="page_3">
-     <layout class="QVBoxLayout" name="verticalLayout_3">
-      <item>
-       <widget class="QLineEdit" name="adminPasswordLineEdit">
-        <property name="text">
-         <string>رمز مدیر:</string>
-        </property>
-       </widget>
-      </item>
-      <item>
-       <widget class="QPushButton" name="adminLoginButton">
-        <property name="text">
-         <string>ورود</string>
-        </property>
-       </widget>
-      </item>
-     </layout>
-    </widget>
-    <widget class="QWidget" name="page_7">
-     <layout class="QVBoxLayout" name="verticalLayout_5">
-      <item>
-       <widget class="QLineEdit" name="nameLineEdit">
-        <property name="text">
-         <string>نام و نام خانوادگی:</string>
-        </property>
-       </widget>
-      </item>
-      <item>
-       <widget class="QLineEdit" name="usernameLineEdit">
-        <property name="text">
-         <string>نام کاربری:</string>
-        </property>
-       </widget>
-      </item>
-      <item>
-       <widget class="QLineEdit" name="emailLineEdit">
-        <property name="text">
-         <string>آدرس ایمیل:</string>
-        </property>
-       </widget>
-      </item>
-      <item>
-       <widget class="QLineEdit" name="phoneLineEdit">
-        <property name="text">
-         <string>شماره ی همراه:</string>
-        </property>
-       </widget>
-      </item>
-      <item>
-       <widget class="QLineEdit" name="passwordLineEdit">
-        <property name="text">
-         <string>رمز عبور:</string>
-        </property>
-       </widget>
-      </item>
-      <item>
-       <widget class="QPushButton" name="signupButton">
-        <property name="text">
-         <string>ثبت نام</string>
-        </property>
-       </widget>
-      </item>
-      <item>
-       <widget class="QPushButton" name="userLoginButton">
-        <property name="text">
-         <string>ورود</string>
-        </property>
-       </widget>
-      </item>
-     </layout>
-    </widget>
-    <widget class="QWidget" name="page_2">
-     <layout class="QVBoxLayout" name="verticalLayout_4">
-      <item>
-       <widget class="QPushButton" name="btnCreateAd">
-        <property name="text">
-         <string>ثبت آگهی</string>
-        </property>
-       </widget>
-      </item>
-      <item>
-       <widget class="QPushButton" name="btnViewAd">
-        <property name="text">
-         <string>مشاهده ی آگهی </string>
-        </property>
-       </widget>
-      </item>
-      <item>
-       <widget class="QPushButton" name="btnCart">
-        <property name="text">
-         <string>سبد خرید</string>
-        </property>
-       </widget>
-      </item>
-      <item>
-       <widget class="QPushButton" name="btnWallet">
-        <property name="text">
-         <string>کیف پول</string>
-        </property>
-       </widget>
-      </item>
-      <item>
-       <widget class="QPushButton" name="btnUserProfile">
-        <property name="text">
-         <string>پروفایل کاربری</string>
-        </property>
-       </widget>
-      </item>
-      <item>
-       <widget class="QPushButton" name="btnUserLogout">
-        <property name="text">
-         <string>خروج</string>
-        </property>
-       </widget>
-      </item>
-     </layout>
-    </widget>
-    <widget class="QWidget" name="page_4">
-     <layout class="QVBoxLayout" name="verticalLayout_2">
-      <item>
-       <widget class="QPushButton" name="btnViewSystemStats">
-        <property name="text">
-         <string>آمار کلی سامانه</string>
-        </property>
-       </widget>
-      </item>
-      <item>
-       <widget class="QPushButton" name="btManageAds">
-        <property name="text">
-         <string>تایید/رد آگهی ها</string>
-        </property>
-       </widget>
-      </item>
-      <item>
-       <widget class="QPushButton" name="btnServerSetings">
-        <property name="text">
-         <string>مدیریت تنظیمات </string>
-        </property>
-       </widget>
-      </item>
-      <item>
-       <widget class="QPushButton" name="btnAdminLogout">
-        <property name="text">
-         <string>خروج</string>
-        </property>
-       </widget>
-      </item>
-     </layout>
-    </widget>
+   </widget>
+   <widget class="QWidget" name="verticalLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>80</x>
+      <y>90</y>
+      <width>160</width>
+      <height>80</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout"/>
+   </widget>
+   <widget class="QListWidget" name="adsListWidget">
+    <property name="geometry">
+     <rect>
+      <x>350</x>
+      <y>340</y>
+      <width>256</width>
+      <height>192</height>
+     </rect>
+    </property>
    </widget>
   </widget>
   <widget class="QMenuBar" name="menubar">
