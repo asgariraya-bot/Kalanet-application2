@@ -1,7 +1,6 @@
 #ifndef MAINWINDOW_H
 #define MAINWINDOW_H
-#include "ad.h"
-#include<Qvector>
+
 #include <QMainWindow>
 
 QT_BEGIN_NAMESPACE
@@ -18,18 +17,7 @@ public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
 
-private slots:
-    void on_pushButton_clicked();
-    void updateAdsDisplay();
-    void on_adsListWidget_itemDoubleClicked(QWidgetItem *item);
-    void setupDashboard();
-    void on_btnNewAd_clicked();
-    void on_btnMyProfile_clicked();
 private:
     Ui::MainWindow *ui;
-    QImage selectedImage;
-    AdManager myManager;
 };
-#endif
-
-
+#endif // MAINWINDOW_H
